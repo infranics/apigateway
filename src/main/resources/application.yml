@@ -1,0 +1,17 @@
+spring:
+  application:
+      name: CloudGateWay
+
+server:
+  port: 80
+
+zuul:
+  ssl-hostname-validation-enabled: false
+  routes:
+    es:
+      path: /es/**
+      sensitiveHeaders:
+      url: https://112.175.114.165:31198
+
+
+   
